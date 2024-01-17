@@ -1,0 +1,27 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./build",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "inlineSourceMap": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "target": "ES6",
+    "module": "ESNext",
+    "lib": ["es2020", "dom", "ES2021.String"],
+    "allowJs": true,
+    "types": ["node", "webdriverio/async", "chai", "mocha"]
+  },
+  "include": ["common/**/**/*.ts", "constant/*.ts", "test/**/*.ts", "specs/*e2e.ts", "global.d.ts", "wdio.conf.ts", "runner/**/*"],
+  "exclude": ["node_modules"]
+}
